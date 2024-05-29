@@ -1,54 +1,82 @@
+/* Tüm elemanların margin, padding ve box-sizing özelliklerini sıfırlıyor */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Genel body stili, yazı tipi, metin rengi, arka plan resmi ve yüksekliği */
 body{
-    font-family: 'montserrat', sans-serif;
-    color: #fff;
-    background-image: url('b.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    font-family: 'montserrat', sans-serif; /* Montserrat yazı tipini kullanıyor */
+    color: #fff; /* Metin rengini beyaz yapıyor */
+    background-image: url('b.jpg'); /* Arka plan resmi ekliyor */
+    background-position: center; /* Arka plan resmini ortalıyor */
+    background-repeat: no-repeat; /* Arka plan resminin tekrar etmesini engelliyor */
+    background-size: cover; /* Arka plan resmini kaplayacak şekilde ölçeklendiriyor */
+    height: 100vh; /* Yüksekliği ekranın tamamını kaplayacak şekilde ayarlıyor */
 }
 
+/* Uygulamanın genel yapısını ayarlayan stil */
 .app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: rgba(0,0,0,.7);
-    height: 100vh;
+    display: flex; /* Flexbox düzeni kullanıyor */
+    flex-direction: column; /* Elemanları dikey olarak hizalıyor */
+    align-items: center; /* Elemanları yatay olarak ortalıyor */
+    text-align: center; /* Metinleri ortalıyor */
+    background-color: rgba(0,0,0,.7); /* Arka planı yarı saydam siyah yapıyor */
+    height: 100vh; /* Yüksekliği ekranın tamamını kaplayacak şekilde ayarlıyor */
 }
 
+/* Başlık kısmını ayarlayan stil */
 .header{
-    padding: 50px 20px 30px 20px;
+    padding: 50px 20px 30px 20px; /* İçerik etrafındaki boşlukları ayarlıyor */
 }
 
+/* Başlık içindeki h1 etiketinin stilini ayarlıyor */
 .header h1{
-    font-size: 50px;
-    color: #fbb034;
-    text-shadow: 1px 3px rgba(0,0, 0,.9);
+    font-size: 50px; /* Yazı boyutunu ayarlıyor */
+    color: #fbb034; /* Yazı rengini turuncu yapıyor */
+    text-shadow: 1px 3px rgba(0,0, 0,.9); /* Yazıya gölge ekliyor */
 }
 
+/* Başlık içindeki input alanının stilini ayarlıyor */
 .header input{
-    width: 100%;
-    padding: 10px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    border-bottom: 2px solid #fbb034;
-    text-align: center;
-    font-size: 20px;
-    color: #f2f2f2;
+    width: 100%; /* Genişliğini %100 yapıyor */
+    padding: 10px; /* İçerik etrafındaki boşlukları ayarlıyor */
+    background: transparent; /* Arka planı şeffaf yapıyor */
+    border: 0; /* Kenarlıklarını kaldırıyor */
+    outline: 0; /* Outline'ı kaldırıyor */
+    border-bottom: 2px solid #fbb034; /* Alt kenarını turuncu çizgi yapıyor */
+    text-align: center; /* Metni ortalıyor */
+    font-size: 20px; /* Yazı boyutunu ayarlıyor */
+    color: #f2f2f2; /* Yazı rengini açık gri yapıyor */
 }
 
+/* Şehir bilgisini gösteren elemanın stilini ayarlıyor */
 .city{
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    font-size: 35px; /* Yazı boyutunu ayarlıyor */
+    font-weight: 500; /* Yazı kalınlığını ayarlıyor */
+    margin-bottom: 10px; /* Alt tarafına boşluk ekliyor */
+    text-shadow: 1px 3px rgba(0, 0, 0, .8); /* Yazıya gölge ekliyor */
 }
 
+/* Sıcaklık bilgisini gösteren elemanın stilini ayarlıyor */
+.temp{
+    font-size: 50px; /* Yazı boyutunu ayarlıyor */
+    font-style: italic; /* Yazı stilini italik yapıyor */
+    text-shadow: 1px 3px rgba(0, 0, 0, .8); /* Yazıya gölge ekliyor */
+    margin-bottom: 10px; /* Alt tarafına boşluk ekliyor */
+}
+
+/* Hava durumu açıklamasını gösteren elemanın stilini ayarlıyor */
+.desc{
+    font-size: 25px; /* Yazı boyutunu ayarlıyor */
+    font-style: italic; /* Yazı stilini italik yapıyor */
+    text-shadow: 1px 3px rgba(0, 0, 0, .8); /* Yazıya gölge ekliyor */
+    margin-bottom: 10px; /* Alt tarafına boşluk ekliyor */
+}
+
+/* Minimum ve maksimum sıcaklık değerlerini gösteren elemanın stilini ayarlıyor */
+.minmax{
+    font-size: 24px; /* Yazı boyutunu ayarlıyor */
+    text-shadow: 1px 3px rgba(0, 0, 0, .8); /* Yazıya gölge ekliyor */
+}
